@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sed Corinthians</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Importa o CSS principal do site -->
+    <link rel="icon" href="imagens/logo1.png">  <!--Importa o icone do site-->
+</head>
+<body>
+    <header>
+
+        <!-- Logotipo do site -->
+        <figure class="logo">
+            <img src="imagens/logo1.png" height="75px" width="75px" alt="Logotipo do Site Sed Corinthians">
+        </figure>
+
+        <!--menu de navegação-->
+        <nav>
+            <ul>
+                <a href="index.html"><li class="BOTAO">HOME</li></a>
+                <a href="historia.html"><li class="BOTAO">HISTÓRIA</li></a>
+                <a href="idolos.html"><li class="BOTAO">ÍDOLOS</li></a>
+                <a href="contato.html"><li class="BOTAO">CONTATO</li></a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--BANNER-->
+    
+    <main>
+
+        <!-- Div para conter o mapa embutido do Google Maps -->
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6437208152183!2d-46.474229199999996!3d-23.5453134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66dec98fb855%3A0xf2b061ffbcd2ecf8!2sNeo%20Qu%C3%ADmica%20Arena!5e0!3m2!1spt-BR!2sbr!4v1752781589779!5m2!1spt-BR!2sbr" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Div com informações de contato -->
+        <div id="info">
+            <h1>FALE CONOSCO</h1>
+            <br>
+            <p>Neste canal você pode enviar suas sugestões ou dúvidas.</p>
+            <p>Av. Miguel Ignácio Curi, 111 - Vila Carmosina, São Paulo - SP</p>
+            <p>Telefone: (11) 4336-7900</p>
+            <p>contato@sed_corinthians.com.br</p>
+        </div>
+
+        <!-- Div contendo o formulário de contato -->
+        <div id="formulario">
+            <form id="form" method="post" action="envia.php">
+
+                <!-- Campo para o nome -->
+                <div>
+
+                    <!-- Label associado ao campo nome -->
+                    <label form="nome">Nome:</label>
+                    <input type="text" name="nome" id="NOME" placeholder="Escreva seu nome">
+                </div>
+
+                <!-- Campo para o email -->
+                <div>
+
+                     <!-- Label associado ao campo email -->
+                    <label form="email">E-mail:</label>
+                    <input type="text" name="email" id="E-MAIL" placeholder="Digite o seu e-mail">
+                </div>
+
+                <!-- Campo para mensagem -->
+                <div>
+
+                    <!-- Label associado ao textarea mensagem -->
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea type="text" name="mensagem" id="MENSAGEM" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+
+                <!-- Botão para enviar o formulário -->
+                <input type="submit" value="enviar" id="ENVIAR" class="BOTAO">
+
+                <!-- Botão para limpar os campos do formulário -->
+                <input type="reset" value="limpar" id="LIMPAR" class="BOTAO">
+            </form>
+        </div>
+    </main>
+
+    <!--RODAPÉ-->
+    
+    <footer>
+        <div class="footer-bg"></div> <!-- fundo desfocado -->
+        <div class="footer-content">
+            <p>Siga-nos na Redes Sociais</p>
+            <br>
+            <a href="http://facebook.com" target="_blank"><img src="imagens/social-facebook.png" alt="Facebook"></a>
+            <a href="http://x.com" target="_blank"><img src="imagens/social-twitter.png" alt="Twitter"></a>
+            <a href="http://youtube.com" target="_blank"><img src="imagens/social-youtube.png" alt="Youtube"></a>
+            <br><br>
+            <p>Copyright © Sed Corinthians 2025. Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

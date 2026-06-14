@@ -1,0 +1,251 @@
+ /* Remove margens e espaçamentos padrão de todos os elementos */
+*{
+    margin: 0px;
+    padding: 0px;         
+}
+
+/* Estilização do corpo da página */
+body{
+    background-color: rgba(255, 255, 255, 0.8); /* fundo branco transparente */
+    color: whitesmoke /* Cor do texto em tom claro */
+}
+
+/* Cria uma camada de fundo com imagem e efeito */
+body::before {
+    content: ""; /* Gera um elemento vazio antes do conteúdo do body */
+    position: fixed; /* Fixa a imagem para ficar sempre visível */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagens/wallpaper2.jpg'); /* Imagem de fundo */
+    background-size: cover;  /* Faz a imagem cobrir todo o espaço, sem distorcer */
+    background-position: center; /* Centraliza a imagem */
+    opacity: 0.9; /* controla a transparência */
+    filter: blur(4px); /* adiciona desfoque */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo principal */
+}
+ 
+/* Define a fonte principal usada na página */
+body{
+    font-family: 'Calibri', Helvetica, Arial ;
+}
+ 
+/* Estilização do cabeçalho */
+header{
+    width: 100%; /* Ocupa toda a largura da tela */
+    background-color: black; /* Fundo preto */
+    position: fixed; /* Fixa o cabeçalho no topo da tela */
+    height: 90px; /* Altura do cabeçalho */
+    z-index: 1000 /* Garante que o cabeçalho fique acima dos outros elementos */
+}
+ 
+/* MENU */
+ 
+nav{
+    font-size: 19px; /* Tamanho da fonte do menu */
+    height: 70px; /* Altura do menu */
+    margin-top: 10px;  /* Espaçamento superior */
+}
+ 
+/* Remove os marcadores da lista do menu */
+nav ul{
+    list-style-type: none;
+}
+ 
+/* Estilização dos itens da lista no menu */
+nav ul li{
+    float: left; /* Alinha os itens horizontalmente */
+    margin-left: 15px; /* Espaço à esquerda dos itens */
+    padding: 5px 10px; /* Espaçamento interno dos itens */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    line-height: 3.15; /* Altura da linha para alinhamento vertical */
+}
+ 
+/* Efeito hover para os botões do menu */
+nav ul .BOTAO:hover{
+    background-color: rgba(255 ,255 ,255, 0.2); /* Fundo branco transparente ao passar o mouse */
+}
+ 
+/* Estilização da figura do logo */
+.logo{
+    float: left;
+    margin: 10px 20px 25px 15px;  /* Margem ao redor do logo (topo, direita, base, esquerda) */
+}
+
+/** BANNER **/
+
+#banner{
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/* Estilização do conteúdo principal */
+main{
+    width: 1000px; /* Largura fixa do conteúdo */
+    height: auto; /* Altura automática conforme o conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow: hidden; /* Esconde conteúdo que ultrapasse os limites */
+    text-align: center; /* Centraliza textos e elementos filhos */
+    padding: 20px;  /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding-top: 90px  /* Espaçamento superior para evitar sobreposição com header fixo */
+}
+
+/* Texto com alinhamento justificado */
+.texthome{
+    text-align: justify;
+}
+
+/* Classes para elementos de vídeo, alinhados à esquerda */
+.video1{
+    float: left;
+    text-align: center;
+}
+
+.depay{
+    float: left;
+    text-align: center;
+}
+
+/* Títulos secundários centralizados e limpa flutuações anteriores */
+h2{
+    text-align: center;
+    clear: both;  /* Limpa floats anteriores para evitar sobreposição */
+    margin-top: 18px;  /* Espaço acima dos títulos */
+}
+
+/* Texto justificado com margens superior e inferior */
+.texthome2{
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+
+/* Outra classe para vídeos, alinhada à esquerda */
+.video2{
+    float: left;
+    text-align: center;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%; /* Ocupa 100% da largura do container */
+    border-collapse: collapse; /* Remove espaços entre as bordas das células */
+    margin-top: 20px; /* Espaço acima da tabela */
+    background-color: #000000; /* Fundo preto da tabela */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil em volta */
+}
+
+/* Estilo das células da tabela (th e td) */
+th, td {
+    padding: 10px;  /* Espaçamento interno */
+    text-align: center; /* Texto centralizado */
+    border: 1px solid rgb(0, 0, 0); /* Bordas pretas */
+}
+
+/* Estilo do cabeçalho da tabela */
+thead {
+    background-color: #d3d3d3; /* Fundo cinza claro */
+    color: rgb(0, 0, 0); /* Texto preto */
+}
+
+/* RODAPÉ */
+
+footer {
+    position: relative; /* Para posicionar elementos filhos */
+    height: auto; /* Altura automática conforme conteúdo */
+    overflow: hidden; /* Esconde conteúdos que ultrapassem */
+    text-align: center; /* Centraliza o texto */
+    padding: 30px 20px; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+}
+
+/* Fundo com imagem desfocada */
+.footer-bg {
+    position: absolute; /* Fixa na posição do rodapé */
+    top: 0; left: 0; /* Posiciona no canto superior esquerdo */
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagens/footer.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre todo o espaço */
+    background-position: center; /* Centraliza imagem */
+    filter: blur(3px) brightness(0.6); /* Aplica desfoque e escurece */
+    z-index: 0; /* Fica atrás do conteúdo do rodapé */
+}
+
+/* Conteúdo do rodapé posicionado acima da imagem */
+.footer-content {
+    position: relative;
+    z-index: 1; /* Coloca o conteúdo acima da imagem de fundo */
+}
+
+/** CONTATO **/
+
+/* Centraliza o mapa e adiciona margem superior */
+#mapa{
+text-align: center;
+margin-top: 10px;
+}
+
+/* Caixa com informações de contato */
+#info{
+    width: 500px;  /* Largura fixa */
+    height: auto; /* Altura automática */
+    margin: 50px 0; /* Margem vertical */
+    float: left; /* Alinha à esquerda */
+}
+
+/* Caixa com formulário de contato */
+#formulario{
+    width: 400px;
+    height: auto;
+    float: right;
+    margin: 50px 0; /* Margem vertical */
+}
+
+/* Estilização das labels dentro do formulário */
+#formulario label{
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Inputs dentro de divs do formulário */
+#formulario div input{
+    width: 395px;
+    height: 25px;
+    background-color: #969696; /* Fundo cinza */
+    border: 1px solid #000000; /* Borda preta */
+}
+
+/* Área de texto do formulário */
+#formulario textarea{
+    width: 395px;
+    height: 70px;
+    background-color: #969696; /* Fundo cinza */
+    border: 1px solid #000000; /* Borda preta */
+    resize: none; /* Impede redimensionamento pelo usuário */
+}
+
+/* Botões do formulário */
+#formulario .BOTAO{
+    width: 100px;
+    height: 30px;
+    color: white;
+    float: right;
+    margin: 15px 0px 20px 15px; /* Margens (topo, direita, base, esquerda) */
+    border-radius: 7px; /* Bordas arredondadas */
+}
+
+/* Botão enviar com cor verde escuro */
+#ENVIAR{
+    background-color: darkgreen;
+    border: green;
+}
+
+/* Botão limpar com cor vermelha escura */
+#LIMPAR{
+    background-color: darkred;
+    border: red;
+}
