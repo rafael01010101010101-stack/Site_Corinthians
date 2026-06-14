@@ -11,7 +11,7 @@ Este é um projeto de desenvolvimento web focado na criação de uma interface f
 
 ## 🛠️ Tecnologias Utilizadas
 - **HTML5:** Para a estruturação semântica de todo o conteúdo do site.
-- **CSS3:** Para a estilização, definição de layout, cores e responsividade básica.
+- **CSS:** Para a estilização, definição de layout, cores e responsividade básica.
 - **Ambiente:** Desenvolvido utilizando o Visual Studio Code.
 
 ---
